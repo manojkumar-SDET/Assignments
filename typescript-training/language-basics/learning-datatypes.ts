@@ -2,7 +2,7 @@
 //Assignment1
 
 //1.Temperature of a city in degrees Celsius: 25.5
-export let cityTemperature : number = 25.5;
+ let cityTemperature : number = 25.5;
 console.log("city Temperature:" + cityTemperature);
 
 
