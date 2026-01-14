@@ -39,6 +39,15 @@ let sym = Symbol('unique');
 console.log(typeof sym);
 console.log(sym);
 
+//6.symbol symbol represents a unique identifier..
+let countryOfOrigin=Symbol();
+let productInfo={
+      productName:"OnePlus 9",
+      productPrice: 69990,
+      [countryOfOrigin]: "China"
+}
+console.log(productInfo);
+
 /* symbol--
 let id = Symbol('id');
 let user = { name: "Manoj" };
@@ -64,7 +73,7 @@ let stuDetails={
     skills: ["JavaScript", "Nodejs", "TypeScript"]
 };
 //console.log(typeof stuDetails);
-//console.log(stuDetails);
+console.log(stuDetails);
 
 //print student name
 console.log(stuDetails.stuName);
@@ -86,6 +95,64 @@ console.log(fruits[2], fruitsAndPrices[5]); //banana, 80
 
 //print Grape price and its availablity 
 console.log(fruits[3], fruitsAndPrices[7], fruitsAndPricesAndAvailability[11]); //grape,120,true
+
+//3.function ==> function represents a block of code designed to perfrom a particular task
+function launchTheApplication(browserName, url){
+    console.log("Launch the browser:"+ browserName);
+    console.log("Launch the URL:"+ URL);
+    console.log("Application Launched Successfully");
+
+//calling the function
+launchTheApplication("Chrome", "www.abc.com");
+}
+
+//4.Date represents date and time in JavaScript
+let currentDate = new Date();
+
+//get current year
+console.log(currentDate.getFullYear()); //output:current year
+
+//get current month
+console.log(currentDate.getMonth() +1); //output : current month (0-based index, so adding 1)
+
+//get current date
+console.log(currentDate.getDate()); // output : Current date
+
+//get current hours
+console.log(currentDate.getHours());
+
+//get current minutes
+console.log(currentDate.getMinutes());
+
+//get current seconds
+console.log(currentDate.getSeconds());
+
+//get milliseconds from jan 1
+console.log(currentDate.getMilliseconds());
+
+
+//5.map represents a collection of key-value pairs where keys can be of any data type
+let employeeMap = new Map();
+employeeMap.set("empId", 101);
+employeeMap.set("empName", "Teju");
+employeeMap.set("havingVisa", true);
+employeeMap.set("empName", "Kamal");
+employeeMap.delete("havingVisa"); //deleting having visa
+
+//get employee name
+console.log(employeeMap.get("empName")); //output : Kamal 
+console.log(employeeMap);
+console.log(employeeMap.size);
+
+//6.set ==> set represents a collection of unique values of any data type
+let uniqueNumbers = new Set();
+uniqueNumbers.add(10);
+uniqueNumbers.add(20);
+uniqueNumbers.add(30);
+uniqueNumbers.add(20); //duplicate value
+uniqueNumbers.delete(10); //deleting 10
+console.log(uniqueNumbers.size); //size of data
+console.log(uniqueNumbers);
 
 
 
