@@ -1,9 +1,4 @@
-/*
 //Creating a program to validate bank transactions of a user and calculating credits,debits and Final Balance.
-
-let bankTransactions:number []=[50000,-2000,3000,-15000,-200,-300,4000,-3000]
-console.log(bankTransactions);
-*/
 
 function evaluateTransactions(transactions: number[]): void {
     console.log("Bank Transaction Evaluation Result");
