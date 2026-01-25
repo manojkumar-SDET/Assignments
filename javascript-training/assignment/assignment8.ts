@@ -5,9 +5,14 @@ let pattern: number = 5;
 
 for (let i: number = 1; i <= pattern; i++) {
     let row: string = "";
+
+    for (let j: number = pattern; j > i; j--) {
+        row += " ";
+    }
     for (let j: number = 1; j <= i; j++) {
         row += j;
     }
+    
     console.log(row);
 }
 
